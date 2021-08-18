@@ -13,7 +13,11 @@ class Order(models.Model):
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
+<<<<<<< HEAD
     country = models.CharField(max_length=50, blank=True)
+=======
+    country = models.CharField(max_length=50, null=True, blank=True)
+>>>>>>> c6b7239dec7e496cdbb40764aa6ef5b15e7ce133
     postcode = models.CharField(max_length=20, null=True, blank=True)
     town_or_city = models.CharField(max_length=40, null=False, blank=False)
     street_address1 = models.CharField(max_length=80, null=False, blank=False)
