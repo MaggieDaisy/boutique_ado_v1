@@ -23,6 +23,7 @@
       <strong>Menu:</strong>
       <ul>
         {% if user.is_authenticated %}
+        {% if request.user.is_superuser %}
         <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
         <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
         {% else %}
